@@ -1,0 +1,213 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+/* Header and Navigation */
+header {
+    background-color: skyblue;
+    color:black;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: skyblue;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color:black;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    padding: 10px 15px;
+    background-color: skyblue;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: skyblue;
+}
+
+.btn {
+    background-color: lightgray;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: lightcyan;
+}
+
+.login-btn {
+    background-color:lightcyan ;
+}
+
+.signup-btn {
+    background-color:lightcyan;
+}
+
+.signup-btn:hover {
+    background-color: lightcyan;
+}
+
+header img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* Featured Internships */
+.featured-internships {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0f8ff;
+}
+
+.featured-internships h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #003366;
+}
+
+.internship-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.internship-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.internship-card a{
+    background-color: skyblue;
+    color:black;
+}
+
+.internship-card:hover {
+    transform: scale(1.05);
+}
+
+.internship-card h3 {
+    margin: 0 0 10px;
+    color: #003366;
+}
+
+.internship-card p {
+    margin: 5px 0;
+    color: black;
+}
+
+.internship-card .btn {
+    margin-top: 10px;
+    display: inline-block;
+    
+}
+
+/* Styles for Chatbot Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 30px; /* Distance from bottom of the page */
+    right: 30px;  /* Distance from the right of the page */
+    z-index: 1000;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#chatbot-icon i {
+    font-size: 40px; /* Size of the chat icon */
+    color: #00796b;  /* Chat icon color */
+}
+
+#chatbot-icon:hover {
+    background-color: #f0f0f0; /* Hover effect */
+}
+
+/* Styling for the chat window (Dialogflow) */
+df-messenger {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    max-width: 400px;
+    height: 500px;
+    display: none; /* Initially hidden */
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
