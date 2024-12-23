@@ -1,1 +1,1 @@
-# PG-Life
+# Internship portal
